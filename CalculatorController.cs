@@ -35,7 +35,6 @@ namespace OnlineCalculator.Controllers
         [HttpPost("reverseSentence")]
         public string Post([FromBody] string inputStr)
         {
-            
             return string.Join(" ", inputStr.Split(" ").Reverse());
         }
 
@@ -113,7 +112,6 @@ namespace OnlineCalculator.Controllers
             {
                 countResult.Add(item.Length);
             }
-
 
             return countResult;
         }
