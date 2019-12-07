@@ -10,6 +10,7 @@ const removeFromData = function (indexVal) {
 
 const deleteOrder = (req, res, orderID) => {
 	const orderIDIndex = handler.findIndex(orderID);
+	// eslint-disable-next-line eqeqeq
 	if (orderIDIndex != -1) {
 		removeFromData(orderIDIndex);
 		res.writeHeader(200);
@@ -18,7 +19,7 @@ const deleteOrder = (req, res, orderID) => {
 		const logObj = { ACTION: 'deleteOrder', date: moment().format(), data: msg };
 		data.logs.push(logObj);
 	} else {
-		const msg =`Error! cannot find order ${orderID} in order list `;
+		const msg = `Error! cannot find order ${orderID} in order list `;
 		res.writeHeader(400);
 		res.end(msg);
 		const logObj = { ACTION: 'deleteOrder', date: moment().format(), data: msg };
@@ -28,4 +29,4 @@ const deleteOrder = (req, res, orderID) => {
 
 module.exports = {
 	deleteOrder
-}
+};
