@@ -3,7 +3,7 @@ const url = require('url');
 
 const deleteHandler = require('./Handlers/deletehandler');
 const adminHandler = require('./Handlers/adminHandler');
-const postHandler = require('./Handlers/postHandlers');
+const postHandler = require('./Handlers/postHandler');
 const putHandler = require('./Handlers/putHandler');
 const getHandler = require('./Handlers/getHandler');
 module.exports = (req, res) => {
