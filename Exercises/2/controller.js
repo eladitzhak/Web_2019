@@ -1,7 +1,7 @@
 const url = require('url');
 // const { getSingleSong } = require('./handlers');
 
-const deleteHandler = require('./Handlers/deletehandler');
+const deleteHandler = require('./Handlers/deleteHandler');
 const adminHandler = require('./Handlers/adminHandler');
 const postHandler = require('./Handlers/postHandler');
 const putHandler = require('./Handlers/putHandler');
