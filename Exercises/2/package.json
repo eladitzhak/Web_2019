@@ -10,7 +10,7 @@
   "author": "eitzhak",
   "license": "ISC",
   "dependencies": {
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.24.0",
     "njwt": "^1.0.0"
   }
